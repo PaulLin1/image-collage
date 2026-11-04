@@ -1,0 +1,20 @@
+[project]
+name = "image-collage"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Paul Lin", email = "plin5166@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "opencv-python>=5.0.0.93",
+]
+
+[project.scripts]
+image-collage = "image_collage:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
